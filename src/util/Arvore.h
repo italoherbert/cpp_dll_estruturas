@@ -10,20 +10,17 @@
 #include "Objeto.h"
 #include "PercIT.h"
 #include "Estrutura.h"
+#include "structdef.h"
 #include "comp/ObjComparador.h"
 #include "comp/CampoComparador.h"
+#include "it/Iterador.h"
 
 class ARVORE_API Arvore : public Estrutura {
-
-	typedef struct TArv {
-		Objeto* dados;
-		struct TArv* esq;
-		struct TArv* dir;
-	} Arv;
 
 	private:
 		Arv* raiz;
 		ObjComparador* objComparador;
+		int tam;
 
 		void insereEmArvore( Arv**, Objeto* );
 		void percorreArvorePreOrdem( Arv*, PercIT* );
@@ -46,6 +43,7 @@ class ARVORE_API Arvore : public Estrutura {
 
 		void insere( Objeto* );
 		void percorre( PercIT* );
+		Iterador* it();
 		Objeto* busca( CampoComparador* );
 		bool altera( CampoComparador*, Objeto* );
 		Objeto* deleta( CampoComparador* );

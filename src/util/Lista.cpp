@@ -1,5 +1,6 @@
 
 #include "Lista.h"
+#include "it/ListaIterador.h"
 
 #include <cstdlib>
 
@@ -32,6 +33,10 @@ void Lista::percorre( PercIT* perc ) {
 
 void Lista::percorreOrdemInversa( PercIT* perc ) {
     percorreListaOrdemInversa( descritor, perc );
+}
+
+Iterador* Lista::it() {
+    return new ListaIterador( descritor->prim );
 }
 
 Objeto* Lista::busca( CampoComparador* comparador ) {

@@ -142,35 +142,42 @@
 	"IDObjComparador.h"
 	"../IDObjeto.h"
 
-1753785680 c:\users\italo\workspace-cpp\utils\src\util\lista.h
+1753827132 c:\users\italo\workspace-cpp\utils\src\util\lista.h
 	"Objeto.h"
 	"PercIT.h"
 	"Estrutura.h"
+	"structdef.h"
 	"comp/ObjComparador.h"
 	"comp/CampoComparador.h"
+	"it/Iterador.h"
 
-1753785755 source:c:\users\italo\workspace-cpp\utils\src\util\lista.cpp
+1753827442 source:c:\users\italo\workspace-cpp\utils\src\util\lista.cpp
 	"Lista.h"
+	"it/ListaIterador.h"
 	<cstdlib>
 
-1753785662 source:c:\users\italo\workspace-cpp\utils\src\util\arvore.cpp
+1753827385 source:c:\users\italo\workspace-cpp\utils\src\util\arvore.cpp
 	"Arvore.h"
+	"it/ArvoreOrdemCentralIterador.h"
 	<cstdlib>
 
-1753785787 c:\users\italo\workspace-cpp\utils\src\util\arvore.h
+1753827102 c:\users\italo\workspace-cpp\utils\src\util\arvore.h
 	"Objeto.h"
 	"PercIT.h"
 	"Estrutura.h"
+	"structdef.h"
 	"comp/ObjComparador.h"
 	"comp/CampoComparador.h"
+	"it/Iterador.h"
 
-1753785708 c:\users\italo\workspace-cpp\utils\src\util\estrutura.h
+1753827477 c:\users\italo\workspace-cpp\utils\src\util\estrutura.h
 	"Objeto.h"
 	"PercIT.h"
 	"comp/ObjComparador.h"
 	"comp/CampoComparador.h"
+	"it/Iterador.h"
 
-1753722981 source:c:\users\italo\workspace-cpp\utils\src\util\idarvore.cpp
+1753808534 source:c:\users\italo\workspace-cpp\utils\src\util\idarvore.cpp
 	"IDArvore.h"
 	"comp/IDCampoComparador.h"
 
@@ -178,4 +185,55 @@
 	"Arvore.h"
 	"IDObjeto.h"
 	"comp/IDObjComparador.h"
+
+1753812903 c:\users\italo\workspace-cpp\utils\src\util\structdef.h
+	"Objeto.h"
+
+1753825387 source:c:\users\italo\workspace-cpp\utils\src\util\it\arvoreordemcentraliterador.cpp
+	"ArvoreOrdemCentralIterador.h"
+	<cstdlib>
+
+1753825272 c:\users\italo\workspace-cpp\utils\src\util\it\arvoreordemcentraliterador.h
+	"ArvoreIterador.h"
+	"../Objeto.h"
+	"../structdef.h"
+
+1753826474 c:\users\italo\workspace-cpp\utils\src\util\it\arvoreiterador.h
+	"Iterador.h"
+	"../Objeto.h"
+	"../structdef.h"
+
+1753824481 c:\users\italo\workspace-cpp\utils\src\util\it\iterador.h
+	"../Objeto.h"
+
+1753825118 source:c:\users\italo\workspace-cpp\utils\src\util\it\arvoreiterador.cpp
+	"ArvoreIterador.h"
+	<cstdlib>
+
+1753825651 source:c:\users\italo\workspace-cpp\utils\src\util\it\arvorepreordemiterador.cpp
+	"ArvorePreOrdemIterador.h"
+	<cstdlib>
+
+1753824519 c:\users\italo\workspace-cpp\utils\src\util\it\arvorepreordemiterador.h
+	"ArvoreIterador.h"
+	"../Objeto.h"
+	"../structdef.h"
+
+1753826852 source:c:\users\italo\workspace-cpp\utils\src\util\it\listaiterador.cpp
+	"ListaIterador.h"
+	<cstdlib>
+
+1753826375 source:c:\users\italo\workspace-cpp\utils\src\util\it\arvoreposordemiterador.cpp
+	"ArvorePosOrdemIterador.h"
+	<cstdlib>
+
+1753826327 c:\users\italo\workspace-cpp\utils\src\util\it\arvoreposordemiterador.h
+	"ArvoreIterador.h"
+	"../Objeto.h"
+	"../structdef.h"
+
+1753826883 c:\users\italo\workspace-cpp\utils\src\util\it\listaiterador.h
+	"Iterador.h"
+	"../Objeto.h"
+	"../structdef.h"
 

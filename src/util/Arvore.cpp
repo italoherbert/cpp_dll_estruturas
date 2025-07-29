@@ -1,12 +1,13 @@
 
 #include "Arvore.h"
+#include "it/ArvoreOrdemCentralIterador.h"
 
 #include <cstdlib>
 
 Arvore::Arvore( ObjComparador* objComparador ) {
 	this->raiz = NULL;
 	this->objComparador = objComparador;
-	this->tamanho = 0;
+	this->tam = 0;
 }
 
 Arvore::~Arvore() {
@@ -33,6 +34,10 @@ void Arvore::percorrePosOrdem( PercIT* perc ) {
 	percorreArvorePosOrdem( raiz, perc );
 }
 
+Iterador* Arvore::it() {
+    return new ArvoreOrdemCentralIterador( raiz );
+}
+
 Objeto* Arvore::busca( CampoComparador* comparador ) {
 	return buscaEmArvore( raiz, comparador );
 }
@@ -50,7 +55,7 @@ void Arvore::deletaTodos( bool deletarObjetos ) {
 }
 
 int Arvore::getTamanho() {
-    return tamanho;
+    return tam;
 }
 
 int Arvore::tamanho() {
@@ -64,7 +69,7 @@ void Arvore::insereEmArvore( Arv** arv, Objeto* dados ) {
 		(*arv)->esq = NULL;
 		(*arv)->dir = NULL;
 
-		this->tamanho++;
+		this->tam++;
 	} else if ( objComparador->compara( dados, (*arv)->dados ) == -1 ) {
 		insereEmArvore( &((*arv)->esq), dados );
 	} else {
@@ -146,7 +151,7 @@ Objeto* Arvore::deletaEmArvore( Arv** arv, CampoComparador* comparador ) {
 		Objeto* dados = aux->dados;
 		delete aux;
 
-		this->tamanho--;
+		this->tam--;
 		return dados;
 	} else if ( comparador->compara( (*arv)->dados ) == -1 ) {
 		return deletaEmArvore( &(*arv)->esq, comparador );
@@ -164,7 +169,7 @@ void Arvore::deletaTodosEmArvore( Arv** arv, bool deletarObjetos ) {
         delete *arv;
         *arv = NULL;
     }
-    this->tamanho = 0;
+    this->tam = 0;
 }
 
 int Arvore::tamanhoDaArvore( Arv* arv ) {

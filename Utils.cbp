@@ -43,7 +43,6 @@
 				</Linker>
 			</Target>
 		</Build>
-		<Unit filename="include/util/Lista.h" />
 		<Unit filename="src/util/Arvore.cpp" />
 		<Unit filename="src/util/Arvore.h" />
 		<Unit filename="src/util/Estrutura.h" />
@@ -61,6 +60,16 @@
 		<Unit filename="src/util/comp/IDObjComparador.cpp" />
 		<Unit filename="src/util/comp/IDObjComparador.h" />
 		<Unit filename="src/util/comp/ObjComparador.h" />
+		<Unit filename="src/util/it/ArvoreIterador.cpp" />
+		<Unit filename="src/util/it/ArvoreIterador.h" />
+		<Unit filename="src/util/it/ArvoreOrdemCentralIterador.cpp" />
+		<Unit filename="src/util/it/ArvoreOrdemCentralIterador.h" />
+		<Unit filename="src/util/it/ArvorePosOrdemIterador.cpp" />
+		<Unit filename="src/util/it/ArvorePosOrdemIterador.h" />
+		<Unit filename="src/util/it/ArvorePreOrdemIterador.cpp" />
+		<Unit filename="src/util/it/ArvorePreOrdemIterador.h" />
+		<Unit filename="src/util/it/Iterador.h" />
+		<Unit filename="src/util/structdef.h" />
 		<Unit filename="src/util/utils/numutil.cpp" />
 		<Unit filename="src/util/utils/numutil.h" />
 		<Unit filename="src/util/utils/readutil.cpp" />
