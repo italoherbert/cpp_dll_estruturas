@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Utils" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Utils" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-std=gnu99" />
+					<Add option="-g" />
+					<Add option="-DBUILDING_DLL" />
+					<Add directory="include/util" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Utils" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-O2" />
+					<Add directory="include/util" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="include/util/Lista.h" />
+		<Unit filename="src/util/Arvore.cpp" />
+		<Unit filename="src/util/Arvore.h" />
+		<Unit filename="src/util/Estrutura.h" />
+		<Unit filename="src/util/IDArvore.cpp" />
+		<Unit filename="src/util/IDArvore.h" />
+		<Unit filename="src/util/IDObjeto.cpp" />
+		<Unit filename="src/util/IDObjeto.h" />
+		<Unit filename="src/util/Lista.cpp" />
+		<Unit filename="src/util/Lista.h" />
+		<Unit filename="src/util/Objeto.h" />
+		<Unit filename="src/util/PercIT.h" />
+		<Unit filename="src/util/comp/CampoComparador.h" />
+		<Unit filename="src/util/comp/IDCampoComparador.cpp" />
+		<Unit filename="src/util/comp/IDCampoComparador.h" />
+		<Unit filename="src/util/comp/IDObjComparador.cpp" />
+		<Unit filename="src/util/comp/IDObjComparador.h" />
+		<Unit filename="src/util/comp/ObjComparador.h" />
+		<Unit filename="src/util/utils/numutil.cpp" />
+		<Unit filename="src/util/utils/numutil.h" />
+		<Unit filename="src/util/utils/readutil.cpp" />
+		<Unit filename="src/util/utils/readutil.h" />
+		<Unit filename="src/util/utils/strutil.cpp" />
+		<Unit filename="src/util/utils/strutil.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

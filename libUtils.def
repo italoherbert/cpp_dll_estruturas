@@ -1,0 +1,35 @@
+EXPORTS
+    _Z10readDoubleSsSs @1
+    _Z10startsWithSsSs @2
+    _Z13sorteiaNumerov @3
+    _Z7readIntSsSs @4
+    _Z7toLowerSs @5
+    _Z8readLineSs @6
+    _ZN11ObjetoComID5getIdEv @7
+    _ZN11ObjetoComID5setIdEi @8
+    _ZN15IDObjComparador7comparaEP6ObjetoS1_ @9
+    _ZN17IDCampoComparador7comparaEP6Objeto @10
+    _ZN17IDCampoComparadorC1Ei @11
+    _ZN17IDCampoComparadorC2Ei @12
+    _ZN6Arvore16percorrePreOrdemEP6PercIT @13
+    _ZN6Arvore16percorrePreOrdemEPNS_4TArvEP6PercIT @14
+    _ZN6Arvore5buscaEP15CampoComparador @15
+    _ZN6Arvore5buscaEPNS_4TArvEP15CampoComparador @16
+    _ZN6Arvore6alteraEP15CampoComparadorP6Objeto @17
+    _ZN6Arvore6alteraEPNS_4TArvEP15CampoComparadorP6Objeto @18
+    _ZN6Arvore6deletaEP15CampoComparador @19
+    _ZN6Arvore6deletaEPPNS_4TArvEP15CampoComparador @20
+    _ZN6Arvore6insereEP13ObjComparadorP6Objeto @21
+    _ZN6Arvore6insereEPPNS_4TArvEP13ObjComparadorP6Objeto @22
+    _ZN6ArvoreC1Ev @23
+    _ZN6ArvoreC2Ev @24
+    _ZTI13ObjComparador @25 DATA
+    _ZTI15CampoComparador @26 DATA
+    _ZTI15IDObjComparador @27 DATA
+    _ZTI17IDCampoComparador @28 DATA
+    _ZTI6PercIT @29 DATA
+    _ZTV13ObjComparador @30 DATA
+    _ZTV15CampoComparador @31 DATA
+    _ZTV15IDObjComparador @32 DATA
+    _ZTV17IDCampoComparador @33 DATA
+    _ZTV6PercIT @34 DATA

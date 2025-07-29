@@ -1,0 +1,181 @@
+# depslib dependency file v1.0
+1743445502 source:c:\users\italo\workspace-cpp\utils\main.cpp
+	<iostream>
+
+1753638669 source:c:\users\italo\workspace-cpp\utils\util\arv\arvore.cpp
+	"Arvore.h"
+
+1753638467 c:\users\italo\workspace-cpp\utils\util\arv\arvore.h
+	"../Objeto.h"
+	"../PercIT.h"
+	"../comp/ObjComparador.h"
+	"../comp/CampoComparador.h"
+	<cstdlib>
+
+1753619706 c:\users\italo\workspace-cpp\utils\util\objeto.h
+
+1753637631 c:\users\italo\workspace-cpp\utils\util\percit.h
+	"Objeto.h"
+
+1753638207 c:\users\italo\workspace-cpp\utils\util\comp\objcomparador.h
+	"../Objeto.h"
+
+1753638216 c:\users\italo\workspace-cpp\utils\util\comp\campocomparador.h
+	"../Objeto.h"
+
+1753638794 source:c:\users\italo\workspace-cpp\utils\util\comp\idcampocomparador.cpp
+	"IDCampoComparador.h"
+	"../ObjetoComID.h"
+
+1753639612 c:\users\italo\workspace-cpp\utils\util\comp\idcampocomparador.h
+	"CampoComparador.h"
+
+1753620486 c:\users\italo\workspace-cpp\utils\util\objetocomid.h
+	"Objeto.h"
+
+1753638807 source:c:\users\italo\workspace-cpp\utils\util\comp\idobjcomparador.cpp
+	"IDObjComparador.h"
+	"../ObjetoComID.h"
+
+1753639624 c:\users\italo\workspace-cpp\utils\util\comp\idobjcomparador.h
+	"ObjComparador.h"
+
+1753620497 source:c:\users\italo\workspace-cpp\utils\util\objetocomid.cpp
+	"ObjetoComID.h"
+
+1753620801 source:c:\users\italo\workspace-cpp\utils\util\utils\numutil.cpp
+	"numutil.h"
+	<ctime>
+	<cstdlib>
+
+1753655598 c:\users\italo\workspace-cpp\utils\util\utils\numutil.h
+
+1753621043 source:c:\users\italo\workspace-cpp\utils\util\utils\readutil.cpp
+	"readutil.h"
+	<iostream>
+	<limits>
+	<ctime>
+	<cstdlib>
+
+1753655610 c:\users\italo\workspace-cpp\utils\util\utils\readutil.h
+	<iostream>
+
+1753649510 source:c:\users\italo\workspace-cpp\utils\util\utils\strutil.cpp
+	"strutil.h"
+	<iostream>
+
+1753655617 c:\users\italo\workspace-cpp\utils\util\utils\strutil.h
+	<iostream>
+
+1753703036 source:c:\users\italo\workspace-cpp\utils\src\util\arv\arvore.cpp
+	"Arvore.h"
+	<cstdlib>
+
+1753703055 c:\users\italo\workspace-cpp\utils\src\util\arv\arvore.h
+	"../Objeto.h"
+	"../PercIT.h"
+	"../Lista.h"
+	"../comp/ObjComparador.h"
+	"../comp/CampoComparador.h"
+
+1753619706 c:\users\italo\workspace-cpp\utils\src\util\objeto.h
+
+1753637631 c:\users\italo\workspace-cpp\utils\src\util\percit.h
+	"Objeto.h"
+
+1753638207 c:\users\italo\workspace-cpp\utils\src\util\comp\objcomparador.h
+	"../Objeto.h"
+
+1753638216 c:\users\italo\workspace-cpp\utils\src\util\comp\campocomparador.h
+	"../Objeto.h"
+
+1753701867 source:c:\users\italo\workspace-cpp\utils\src\util\arv\idarvore.cpp
+	"IDArvore.h"
+	"../comp/IDCampoComparador.h"
+
+1753703207 c:\users\italo\workspace-cpp\utils\src\util\arv\idarvore.h
+	"Arvore.h"
+	"../IDObjeto.h"
+	"../comp/IDObjComparador.h"
+
+1753697457 c:\users\italo\workspace-cpp\utils\src\util\idobjeto.h
+	"Objeto.h"
+
+1753639624 c:\users\italo\workspace-cpp\utils\src\util\comp\idobjcomparador.h
+	"ObjComparador.h"
+
+1753639612 c:\users\italo\workspace-cpp\utils\src\util\comp\idcampocomparador.h
+	"CampoComparador.h"
+
+1753697407 source:c:\users\italo\workspace-cpp\utils\src\util\idobjeto.cpp
+	"IDObjeto.h"
+
+1753620801 source:c:\users\italo\workspace-cpp\utils\src\util\utils\numutil.cpp
+	"numutil.h"
+	<ctime>
+	<cstdlib>
+
+1753655598 c:\users\italo\workspace-cpp\utils\src\util\utils\numutil.h
+
+1753621043 source:c:\users\italo\workspace-cpp\utils\src\util\utils\readutil.cpp
+	"readutil.h"
+	<iostream>
+	<limits>
+	<ctime>
+	<cstdlib>
+
+1753655610 c:\users\italo\workspace-cpp\utils\src\util\utils\readutil.h
+	<iostream>
+
+1753649510 source:c:\users\italo\workspace-cpp\utils\src\util\utils\strutil.cpp
+	"strutil.h"
+	<iostream>
+
+1753655617 c:\users\italo\workspace-cpp\utils\src\util\utils\strutil.h
+	<iostream>
+
+1753697491 source:c:\users\italo\workspace-cpp\utils\src\util\comp\idcampocomparador.cpp
+	"IDCampoComparador.h"
+	"../IDObjeto.h"
+
+1753697510 source:c:\users\italo\workspace-cpp\utils\src\util\comp\idobjcomparador.cpp
+	"IDObjComparador.h"
+	"../IDObjeto.h"
+
+1753785680 c:\users\italo\workspace-cpp\utils\src\util\lista.h
+	"Objeto.h"
+	"PercIT.h"
+	"Estrutura.h"
+	"comp/ObjComparador.h"
+	"comp/CampoComparador.h"
+
+1753785755 source:c:\users\italo\workspace-cpp\utils\src\util\lista.cpp
+	"Lista.h"
+	<cstdlib>
+
+1753785662 source:c:\users\italo\workspace-cpp\utils\src\util\arvore.cpp
+	"Arvore.h"
+	<cstdlib>
+
+1753785787 c:\users\italo\workspace-cpp\utils\src\util\arvore.h
+	"Objeto.h"
+	"PercIT.h"
+	"Estrutura.h"
+	"comp/ObjComparador.h"
+	"comp/CampoComparador.h"
+
+1753785708 c:\users\italo\workspace-cpp\utils\src\util\estrutura.h
+	"Objeto.h"
+	"PercIT.h"
+	"comp/ObjComparador.h"
+	"comp/CampoComparador.h"
+
+1753722981 source:c:\users\italo\workspace-cpp\utils\src\util\idarvore.cpp
+	"IDArvore.h"
+	"comp/IDCampoComparador.h"
+
+1753717351 c:\users\italo\workspace-cpp\utils\src\util\idarvore.h
+	"Arvore.h"
+	"IDObjeto.h"
+	"comp/IDObjComparador.h"
+
