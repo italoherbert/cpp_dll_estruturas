@@ -6,6 +6,7 @@
 Arvore::Arvore( ObjComparador* objComparador ) {
 	this->raiz = NULL;
 	this->objComparador = objComparador;
+	this->tamanho = 0;
 }
 
 Arvore::~Arvore() {
@@ -48,6 +49,10 @@ void Arvore::deletaTodos( bool deletarObjetos ) {
     deletaTodosEmArvore( &raiz, deletarObjetos );
 }
 
+int Arvore::getTamanho() {
+    return tamanho;
+}
+
 int Arvore::tamanho() {
     return tamanhoDaArvore( raiz );
 }
@@ -58,6 +63,8 @@ void Arvore::insereEmArvore( Arv** arv, Objeto* dados ) {
 		(*arv)->dados = dados;
 		(*arv)->esq = NULL;
 		(*arv)->dir = NULL;
+
+		this->tamanho++;
 	} else if ( objComparador->compara( dados, (*arv)->dados ) == -1 ) {
 		insereEmArvore( &((*arv)->esq), dados );
 	} else {
@@ -138,6 +145,8 @@ Objeto* Arvore::deletaEmArvore( Arv** arv, CampoComparador* comparador ) {
 		}
 		Objeto* dados = aux->dados;
 		delete aux;
+
+		this->tamanho--;
 		return dados;
 	} else if ( comparador->compara( (*arv)->dados ) == -1 ) {
 		return deletaEmArvore( &(*arv)->esq, comparador );
@@ -155,6 +164,7 @@ void Arvore::deletaTodosEmArvore( Arv** arv, bool deletarObjetos ) {
         delete *arv;
         *arv = NULL;
     }
+    this->tamanho = 0;
 }
 
 int Arvore::tamanhoDaArvore( Arv* arv ) {

@@ -15,13 +15,14 @@
 class ESTRUTURA_API Estrutura {
 
 	public:
-	    virtual int tamanho() = 0;
 		virtual void insere( Objeto* ) = 0;
 		virtual void percorre( PercIT* ) = 0;
 		virtual Objeto* busca( CampoComparador* ) = 0;
 		virtual bool altera( CampoComparador*, Objeto* ) = 0;
 		virtual Objeto* deleta( CampoComparador* ) = 0;
 		virtual void deletaTodos( bool deletarObjetos = false ) = 0;
+	    virtual int tamanho() = 0;
+	    virtual int getTamanho() = 0;
 
 };
 

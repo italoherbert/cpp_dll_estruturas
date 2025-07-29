@@ -51,6 +51,7 @@ class ARVORE_API Arvore : public Estrutura {
 		Objeto* deleta( CampoComparador* );
 		void deletaTodos( bool deletarTodos = false );
 		int tamanho();
+		int getTamanho();
 
 };
 
