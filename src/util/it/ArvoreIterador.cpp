@@ -8,7 +8,7 @@ ArvoreIterador::ArvoreIterador() {
 }
 
 bool ArvoreIterador::temProx() {
-    return pilha == NULL;
+    return pilha != NULL;
 }
 
 void ArvoreIterador::pushNaPilha( Arv* perc ) {

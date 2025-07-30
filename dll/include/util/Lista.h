@@ -10,16 +10,12 @@
 #include "Objeto.h"
 #include "PercIT.h"
 #include "Estrutura.h"
+#include "structdef.h"
 #include "comp/ObjComparador.h"
 #include "comp/CampoComparador.h"
+#include "it/Iterador.h"
 
 class LISTA_API Lista : public Estrutura {
-
-    typedef struct TLst {
-        Objeto* dados;
-        struct TLst* ant;
-        struct TLst* prox;
-    } Lst;
 
     typedef struct TDescritor {
         int tamanho;
@@ -56,6 +52,7 @@ class LISTA_API Lista : public Estrutura {
 		void insereNoFim( Objeto* );
 		void percorre( PercIT* );
 		void percorreOrdemInversa( PercIT* );
+        Iterador* it();
 		Objeto* busca( CampoComparador* );
 		bool altera( CampoComparador*, Objeto* );
 		Objeto* deleta( CampoComparador* );
