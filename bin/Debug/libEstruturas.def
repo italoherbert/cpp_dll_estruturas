@@ -1,0 +1,94 @@
+EXPORTS
+    _ZN15IDObjComparador7comparaEP6ObjetoS1_ @1
+    _ZN17IDCampoComparador7comparaEP6Objeto @2
+    _ZN17IDCampoComparadorC1Ei @3
+    _ZN17IDCampoComparadorC2Ei @4
+    _ZN5Lista10getEmListaEPNS_10TDescritorEi @5
+    _ZN5Lista10getTamanhoEv @6
+    _ZN5Lista10popEmListaEPNS_10TDescritorE @7
+    _ZN5Lista11deletaTodosEb @8
+    _ZN5Lista11insereNoFimEP6Objeto @9
+    _ZN5Lista11insereNoFimEPNS_10TDescritorEP6Objeto @10
+    _ZN5Lista12buscaNaListaEPNS_10TDescritorEP15CampoComparador @11
+    _ZN5Lista13alteraNaListaEPNS_10TDescritorEP15CampoComparadorP6Objeto @12
+    _ZN5Lista13deletaNaListaEPNS_10TDescritorEP15CampoComparador @13
+    _ZN5Lista13percorreListaEPNS_10TDescritorEP6PercIT @14
+    _ZN5Lista14insereNoInicioEP6Objeto @15
+    _ZN5Lista14insereNoInicioEPNS_10TDescritorEP6Objeto @16
+    _ZN5Lista14tamanhoDaListaEPNS_10TDescritorE @17
+    _ZN5Lista18deletaTodosNaListaEPNS_10TDescritorEb @18
+    _ZN5Lista20percorreOrdemInversaEP6PercIT @19
+    _ZN5Lista25percorreListaOrdemInversaEPNS_10TDescritorEP6PercIT @20
+    _ZN5Lista2itEv @21
+    _ZN5Lista3getEi @22
+    _ZN5Lista3popEv @23
+    _ZN5Lista5buscaEP15CampoComparador @24
+    _ZN5Lista6alteraEP15CampoComparadorP6Objeto @25
+    _ZN5Lista6deletaEP15CampoComparador @26
+    _ZN5Lista6insereEP6Objeto @27
+    _ZN5Lista7tamanhoEv @28
+    _ZN5Lista8percorreEP6PercIT @29
+    _ZN5ListaC1Ev @30
+    _ZN5ListaC2Ev @31
+    _ZN5ListaD0Ev @32
+    _ZN5ListaD1Ev @33
+    _ZN5ListaD2Ev @34
+    _ZN6Arvore10getTamanhoEv @35
+    _ZN6Arvore11deletaTodosEb @36
+    _ZN6Arvore13buscaEmArvoreEP4TArvP15CampoComparador @37
+    _ZN6Arvore14alteraEmArvoreEP4TArvP15CampoComparadorP6Objeto @38
+    _ZN6Arvore14deletaEmArvoreEPP4TArvP15CampoComparador @39
+    _ZN6Arvore14insereEmArvoreEPP4TArvP6Objeto @40
+    _ZN6Arvore15tamanhoDaArvoreEP4TArv @41
+    _ZN6Arvore16percorrePosOrdemEP6PercIT @42
+    _ZN6Arvore16percorrePreOrdemEP6PercIT @43
+    _ZN6Arvore19deletaTodosEmArvoreEPP4TArvb @44
+    _ZN6Arvore20percorreOrdemCentralEP6PercIT @45
+    _ZN6Arvore22percorreArvorePosOrdemEP4TArvP6PercIT @46
+    _ZN6Arvore22percorreArvorePreOrdemEP4TArvP6PercIT @47
+    _ZN6Arvore26percorreArvoreOrdemCentralEP4TArvP6PercIT @48
+    _ZN6Arvore2itEv @49
+    _ZN6Arvore5buscaEP15CampoComparador @50
+    _ZN6Arvore6alteraEP15CampoComparadorP6Objeto @51
+    _ZN6Arvore6deletaEP15CampoComparador @52
+    _ZN6Arvore6insereEP6Objeto @53
+    _ZN6Arvore7tamanhoEv @54
+    _ZN6Arvore8percorreEP6PercIT @55
+    _ZN6ArvoreC1EP13ObjComparador @56
+    _ZN6ArvoreC2EP13ObjComparador @57
+    _ZN6ArvoreD0Ev @58
+    _ZN6ArvoreD1Ev @59
+    _ZN6ArvoreD2Ev @60
+    _ZN8IDArvore5buscaEi @61
+    _ZN8IDArvore6alteraEP8IDObjeto @62
+    _ZN8IDArvore6deletaEi @63
+    _ZN8IDArvore6insereEP8IDObjeto @64
+    _ZN8IDArvoreC1Ev @65
+    _ZN8IDArvoreC2Ev @66
+    _ZN8IDObjeto5getIdEv @67
+    _ZN8IDObjeto5setIdEi @68
+    _ZTI13ListaIterador @69 DATA
+    _ZTI13ObjComparador @70 DATA
+    _ZTI14ArvoreIterador @71 DATA
+    _ZTI15CampoComparador @72 DATA
+    _ZTI15IDObjComparador @73 DATA
+    _ZTI17IDCampoComparador @74 DATA
+    _ZTI22ArvorePosOrdemIterador @75 DATA
+    _ZTI22ArvorePreOrdemIterador @76 DATA
+    _ZTI26ArvoreOrdemCentralIterador @77 DATA
+    _ZTI5Lista @78 DATA
+    _ZTI6Arvore @79 DATA
+    _ZTI6PercIT @80 DATA
+    _ZTI8IDArvore @81 DATA
+    _ZTI8Iterador @82 DATA
+    _ZTI9Estrutura @83 DATA
+    _ZTV13ObjComparador @84 DATA
+    _ZTV15CampoComparador @85 DATA
+    _ZTV15IDObjComparador @86 DATA
+    _ZTV17IDCampoComparador @87 DATA
+    _ZTV5Lista @88 DATA
+    _ZTV6Arvore @89 DATA
+    _ZTV6PercIT @90 DATA
+    _ZTV8IDArvore @91 DATA
+    _ZTV8Iterador @92 DATA
+    _ZTV9Estrutura @93 DATA
