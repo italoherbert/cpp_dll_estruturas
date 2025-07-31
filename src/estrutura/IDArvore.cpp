@@ -21,7 +21,7 @@ bool IDArvore::altera( IDObjeto* obj ) {
 	return Arvore::altera( comp, obj );
 }
 
-bool IDArvore::deleta( int id ) {
+IDObjeto* IDArvore::deleta( int id ) {
 	IDCampoComparador* comp = new IDCampoComparador( id );
-	return Arvore::deleta( comp );
+	return (IDObjeto*)Arvore::deleta( comp );
 }
