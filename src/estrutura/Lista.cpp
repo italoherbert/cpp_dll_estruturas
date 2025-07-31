@@ -2,13 +2,11 @@
 #include "Lista.h"
 #include "it/ListaIterador.h"
 
-#include <cstdlib>
-
 Lista::Lista() {
     descritor = new Descritor();
     descritor->tamanho = 0;
-    descritor->prim = NULL;
-    descritor->ult = NULL;
+    descritor->prim = nullptr;
+    descritor->ult = nullptr;
 }
 
 Lista::~Lista() {
@@ -75,13 +73,13 @@ void Lista::insereNoInicio( Descritor* desc, Objeto* dados ) {
     Lst* novo = new Lst();
     novo->dados = dados;
 
-    if ( desc->prim == NULL ) {
-        novo->ant = NULL;
-        novo->prox = NULL;
+    if ( desc->prim == nullptr ) {
+        novo->ant = nullptr;
+        novo->prox = nullptr;
         desc->prim = novo;
         desc->ult = novo;
     } else {
-        novo->ant = NULL;
+        novo->ant = nullptr;
         novo->prox = desc->prim;
         desc->prim->ant = novo;
         desc->prim = novo;
@@ -94,14 +92,14 @@ void Lista::insereNoFim( Descritor* desc, Objeto* dados ) {
     Lst* novo = new Lst();
     novo->dados = dados;
 
-    if ( desc->prim == NULL ) {
-        novo->ant = NULL;
-        novo->prox = NULL;
+    if ( desc->prim == nullptr ) {
+        novo->ant = nullptr;
+        novo->prox = nullptr;
         desc->prim = novo;
         desc->ult = novo;
     } else {
         novo->ant = desc->ult;
-        novo->prox = NULL;
+        novo->prox = nullptr;
         desc->ult->prox = novo;
         desc->ult = novo;
     }
@@ -111,7 +109,7 @@ void Lista::insereNoFim( Descritor* desc, Objeto* dados ) {
 
 void Lista::percorreLista( Descritor* desc, PercIT* perc ) {
     Lst* p = desc->prim;
-    while( p != NULL ) {
+    while( p != nullptr ) {
         perc->processa( p->dados );
         p = p->prox;
     }
@@ -119,7 +117,7 @@ void Lista::percorreLista( Descritor* desc, PercIT* perc ) {
 
 void Lista::percorreListaOrdemInversa( Descritor* desc, PercIT* perc ) {
     Lst* p = desc->ult;
-    while( p != NULL ) {
+    while( p != nullptr ) {
         perc->processa( p->dados );
         p = p->ant;
     }
@@ -127,17 +125,17 @@ void Lista::percorreListaOrdemInversa( Descritor* desc, PercIT* perc ) {
 
 Objeto* Lista::buscaNaLista( Descritor* desc, CampoComparador* comparador ) {
     Lst* p = desc->prim;
-    while( p != NULL ) {
+    while( p != nullptr ) {
         if ( comparador->compara( p->dados ) == 0 )
             return p->dados;
         p = p->prox;
     }
-    return NULL;
+    return nullptr;
 }
 
 bool Lista::alteraNaLista( Descritor* desc, CampoComparador* comparador, Objeto* dados ) {
     Lst* p = desc->prim;
-    while( p != NULL ) {
+    while( p != nullptr ) {
         if ( comparador->compara( p->dados ) == 0 ) {
             p->dados = dados;
             return true;
@@ -149,19 +147,19 @@ bool Lista::alteraNaLista( Descritor* desc, CampoComparador* comparador, Objeto*
 
 Objeto* Lista::deletaNaLista( Descritor* desc, CampoComparador* comparador ) {
     Lst* p = desc->prim;
-    Lst* aux = NULL;
-    while( aux == NULL && p != NULL ) {
+    Lst* aux = nullptr;
+    while( aux == nullptr && p != nullptr ) {
         if ( comparador->compara( p->dados ) == 0 )
             aux = p;
         else p = p->prox;
     }
 
-    if ( aux != NULL ) {
+    if ( aux != nullptr ) {
         if ( aux == desc->prim ) {
-            aux->prox->ant = NULL;
+            aux->prox->ant = nullptr;
             desc->prim = aux->prox;
         } else if ( aux == desc->ult ) {
-            aux->ant->prox = NULL;
+            aux->ant->prox = nullptr;
             desc->ult = aux->ant;
         } else {
             aux->ant->prox = aux->prox;
@@ -173,51 +171,51 @@ Objeto* Lista::deletaNaLista( Descritor* desc, CampoComparador* comparador ) {
         desc->tamanho--;
         return dados;
     }
-    return NULL;
+    return nullptr;
 }
 
 void Lista::deletaTodosNaLista( Descritor* desc, bool deletarObjetos ) {
-    while( desc->prim != NULL ) {
+    while( desc->prim != nullptr ) {
         Lst* aux = desc->prim;
         desc->prim = desc->prim->prox;
         if ( deletarObjetos )
             delete aux->dados;
         delete aux;
     }
-    desc->ult = NULL;
+    desc->ult = nullptr;
     desc->tamanho = 0;
 }
 
 Objeto* Lista::popEmLista( Descritor* desc ) {
     Lst* aux = desc->prim;
-    if ( aux != NULL ) {
-        aux->prox->ant = NULL;
+    if ( aux != nullptr ) {
+        aux->prox->ant = nullptr;
         desc->prim = aux->prox;
 
         Objeto* dados = aux->dados;
         delete aux;
         return dados;
     }
-    return NULL;
+    return nullptr;
 }
 
 Objeto* Lista::getEmLista( Descritor* desc, int indice ) {
     Lst* p = desc->prim;
     int contador = 0;
-    while( p != NULL ) {
+    while( p != nullptr ) {
         if ( indice == contador )
             return p->dados;
 
         contador++;
         p = p->prox;
     }
-    return NULL;
+    return nullptr;
 }
 
 int Lista::tamanhoDaLista( Descritor* desc ) {
     Lst* p = desc->prim;
     int contador = 0;
-    while( p != NULL ) {
+    while( p != nullptr ) {
         contador++;
         p = p->prox;
     }

@@ -1,14 +1,12 @@
 
 #include "ListaIterador.h"
 
-#include <cstdlib>
-
 ListaIterador::ListaIterador( Lst* topo ) {
     this->perc = topo;
 }
 
 bool ListaIterador::temProx() {
-    return perc != NULL;
+    return perc != nullptr;
 }
 
 Objeto* ListaIterador::prox() {

@@ -1,8 +1,6 @@
 
 #include "ArvoreOrdemCentralIterador.h"
 
-#include <cstdlib>
-
 ArvoreOrdemCentralIterador::ArvoreOrdemCentralIterador( Arv* raiz ) : ArvoreIterador() {
     pushEsquerdosNaPilha( raiz );
 }
@@ -17,7 +15,7 @@ Objeto* ArvoreOrdemCentralIterador::prox() {
 
 void ArvoreOrdemCentralIterador::pushEsquerdosNaPilha( Arv* perc ) {
     Arv* p = perc;
-    while( p != NULL ) {
+    while( p != nullptr ) {
         ArvoreIterador::pushNaPilha( p );
         p = p->esq;
     }

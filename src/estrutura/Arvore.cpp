@@ -2,10 +2,8 @@
 #include "Arvore.h"
 #include "it/ArvoreOrdemCentralIterador.h"
 
-#include <cstdlib>
-
 Arvore::Arvore( ObjComparador* objComparador ) {
-	this->raiz = NULL;
+	this->raiz = nullptr;
 	this->objComparador = objComparador;
 	this->tam = 0;
 }
@@ -63,11 +61,11 @@ int Arvore::tamanho() {
 }
 
 void Arvore::insereEmArvore( Arv** arv, Objeto* dados ) {
-	if ( *arv == NULL ) {
-		*arv = (Arv*) malloc( sizeof( Arv ) );
+	if ( *arv == nullptr ) {
+		*arv = new Arv;
 		(*arv)->dados = dados;
-		(*arv)->esq = NULL;
-		(*arv)->dir = NULL;
+		(*arv)->esq = nullptr;
+		(*arv)->dir = nullptr;
 
 		this->tam++;
 	} else if ( objComparador->compara( dados, (*arv)->dados ) == -1 ) {
@@ -79,7 +77,7 @@ void Arvore::insereEmArvore( Arv** arv, Objeto* dados ) {
 }
 
 void Arvore::percorreArvorePreOrdem( Arv* arv, PercIT* perc ) {
-	if ( arv != NULL ) {
+	if ( arv != nullptr ) {
 		perc->processa( arv->dados );
 		percorreArvorePreOrdem( arv->esq, perc );
 		percorreArvorePreOrdem( arv->dir, perc );
@@ -87,7 +85,7 @@ void Arvore::percorreArvorePreOrdem( Arv* arv, PercIT* perc ) {
 }
 
 void Arvore::percorreArvoreOrdemCentral( Arv* arv, PercIT* perc ) {
-	if ( arv != NULL ) {
+	if ( arv != nullptr ) {
 		percorreArvoreOrdemCentral( arv->esq, perc );
 		perc->processa( arv->dados );
 		percorreArvoreOrdemCentral( arv->dir, perc );
@@ -95,7 +93,7 @@ void Arvore::percorreArvoreOrdemCentral( Arv* arv, PercIT* perc ) {
 }
 
 void Arvore::percorreArvorePosOrdem( Arv* arv, PercIT* perc ) {
-	if ( arv != NULL ) {
+	if ( arv != nullptr ) {
 		percorreArvorePosOrdem( arv->esq, perc );
 		percorreArvorePosOrdem( arv->dir, perc );
 		perc->processa( arv->dados );
@@ -103,8 +101,8 @@ void Arvore::percorreArvorePosOrdem( Arv* arv, PercIT* perc ) {
 }
 
 Objeto* Arvore::buscaEmArvore( Arv* arv, CampoComparador* comparador ) {
-	if ( arv == NULL )
-		return NULL;
+	if ( arv == nullptr )
+		return nullptr;
 
 	if ( comparador->compara( arv->dados ) == 0 ) {
 		return arv->dados;
@@ -116,7 +114,7 @@ Objeto* Arvore::buscaEmArvore( Arv* arv, CampoComparador* comparador ) {
 }
 
 bool Arvore::alteraEmArvore( Arv* arv, CampoComparador* comparador, Objeto* dados ) {
-	if ( arv == NULL )
+	if ( arv == nullptr )
 		return false;
 
 	if ( comparador->compara( arv->dados ) == 0 ) {
@@ -130,20 +128,20 @@ bool Arvore::alteraEmArvore( Arv* arv, CampoComparador* comparador, Objeto* dado
 }
 
 Objeto* Arvore::deletaEmArvore( Arv** arv, CampoComparador* comparador ) {
-	if ( *arv == NULL )
-		return NULL;
+	if ( *arv == nullptr )
+		return nullptr;
 
 	if ( comparador->compara( (*arv)->dados ) == 0 ) {
 		Arv* aux = *arv;
-		if ( (*arv)->esq == NULL && (*arv)->dir == NULL ) {
-			*arv = NULL;
-		} else if ( (*arv)->esq == NULL ) {
+		if ( (*arv)->esq == nullptr && (*arv)->dir == nullptr ) {
+			*arv = nullptr;
+		} else if ( (*arv)->esq == nullptr ) {
 			*arv = (*arv)->dir;
-		} else if ( (*arv)->dir == NULL ) {
+		} else if ( (*arv)->dir == nullptr ) {
 			*arv = (*arv)->esq;
 		} else {
 			Arv* perc = (*arv)->dir;
-			while( perc->esq != NULL )
+			while( perc->esq != nullptr )
 				perc = perc->esq;
 			perc->esq = (*arv)->esq;
 			*arv = (*arv)->dir;
@@ -161,19 +159,19 @@ Objeto* Arvore::deletaEmArvore( Arv** arv, CampoComparador* comparador ) {
 }
 
 void Arvore::deletaTodosEmArvore( Arv** arv, bool deletarObjetos ) {
-    if ( *arv != NULL ) {
+    if ( *arv != nullptr ) {
         deletaTodosEmArvore( &(*arv)->esq, deletarObjetos );
         deletaTodosEmArvore( &(*arv)->dir, deletarObjetos );
         if ( deletarObjetos )
             delete (*arv)->dados;
         delete *arv;
-        *arv = NULL;
+        *arv = nullptr;
     }
     this->tam = 0;
 }
 
 int Arvore::tamanhoDaArvore( Arv* arv ) {
-    if ( arv == NULL )
+    if ( arv == nullptr )
         return 0;
     return tamanhoDaArvore( arv->esq ) + tamanhoDaArvore( arv->dir ) + 1;
 }

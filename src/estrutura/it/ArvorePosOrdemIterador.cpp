@@ -1,8 +1,6 @@
 
 #include "ArvorePosOrdemIterador.h"
 
-#include <cstdlib>
-
 ArvorePosOrdemIterador::ArvorePosOrdemIterador( Arv* raiz ) : ArvoreIterador() {
     pushEsquerdosNaPilha( raiz );
 }
@@ -19,17 +17,17 @@ Objeto* ArvorePosOrdemIterador::prox() {
 }
 
 void ArvorePosOrdemIterador::pushEsquerdosNaPilha( Arv* perc ) {
-    if ( perc != NULL ) {
+    if ( perc != nullptr ) {
         Arv* p = perc;
-        while( p->esq != NULL && p->dir != NULL ) {
+        while( p->esq != nullptr && p->dir != nullptr ) {
             Arv* ant = p;
-            while( p != NULL ) {
+            while( p != nullptr ) {
                 ArvoreIterador::pushNaPilha( p );
                 ant = p;
                 p = p->esq;
             }
             p = ant;
-            if ( p->dir != NULL )
+            if ( p->dir != nullptr )
                 p = p->dir;
         }
     }

@@ -1,14 +1,12 @@
 
 #include "ArvoreIterador.h"
 
-#include <cstdlib>
-
 ArvoreIterador::ArvoreIterador() {
-    this->pilha = NULL;
+    this->pilha = nullptr;
 }
 
 bool ArvoreIterador::temProx() {
-    return pilha != NULL;
+    return pilha != nullptr;
 }
 
 void ArvoreIterador::pushNaPilha( Arv* perc ) {
@@ -19,8 +17,8 @@ void ArvoreIterador::pushNaPilha( Arv* perc ) {
 }
 
 Arv* ArvoreIterador::popNaPilha() {
-    if ( pilha == NULL )
-        return NULL;
+    if ( pilha == nullptr )
+        return nullptr;
 
     Arv* perc = pilha->perc;
 

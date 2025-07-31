@@ -1,17 +1,15 @@
 
 #include "ArvorePreOrdemIterador.h"
 
-#include <cstdlib>
-
 ArvorePreOrdemIterador::ArvorePreOrdemIterador( Arv* raiz ) : ArvoreIterador() {
-    if ( raiz != NULL )
+    if ( raiz != nullptr )
         ArvoreIterador::pushNaPilha( raiz );
 }
 
 Objeto* ArvorePreOrdemIterador::prox() {
     Arv* perc = ArvoreIterador::popNaPilha();
 
-    if ( perc->esq == NULL ) {
+    if ( perc->esq == nullptr ) {
         ArvoreIterador::pushNaPilha( perc->dir );
     } else {
         ArvoreIterador::pushNaPilha( perc );
