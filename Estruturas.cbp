@@ -53,7 +53,6 @@
 		<Unit filename="src/estrutura/Lista.cpp" />
 		<Unit filename="src/estrutura/Lista.h" />
 		<Unit filename="src/estrutura/Objeto.h" />
-		<Unit filename="src/estrutura/PercIT.h" />
 		<Unit filename="src/estrutura/comp/CampoComparador.h" />
 		<Unit filename="src/estrutura/comp/IDCampoComparador.cpp" />
 		<Unit filename="src/estrutura/comp/IDCampoComparador.h" />
@@ -71,6 +70,9 @@
 		<Unit filename="src/estrutura/it/Iterador.h" />
 		<Unit filename="src/estrutura/it/ListaIterador.cpp" />
 		<Unit filename="src/estrutura/it/ListaIterador.h" />
+		<Unit filename="src/estrutura/perc/IDPercIT.cpp" />
+		<Unit filename="src/estrutura/perc/IDPercIT.h" />
+		<Unit filename="src/estrutura/perc/PercIT.h" />
 		<Unit filename="src/estrutura/structdef.h" />
 		<Extensions />
 	</Project>

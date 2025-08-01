@@ -388,7 +388,7 @@
 1753638207 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\comp\objcomparador.h
 	"../Objeto.h"
 
-1753917884 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\idarvore.cpp
+1754042260 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\idarvore.cpp
 	"IDArvore.h"
 	"comp/IDCampoComparador.h"
 
@@ -397,11 +397,11 @@
 	"IDObjeto.h"
 	"comp/IDObjComparador.h"
 
-1753827102 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\arvore.h
+1754039412 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\arvore.h
 	"Objeto.h"
-	"PercIT.h"
 	"Estrutura.h"
 	"structdef.h"
+	"perc/PercIT.h"
 	"comp/ObjComparador.h"
 	"comp/CampoComparador.h"
 	"it/Iterador.h"
@@ -409,9 +409,9 @@
 1753637631 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\percit.h
 	"Objeto.h"
 
-1753827477 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\estrutura.h
+1754039441 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\estrutura.h
 	"Objeto.h"
-	"PercIT.h"
+	"perc/PercIT.h"
 	"comp/ObjComparador.h"
 	"comp/CampoComparador.h"
 	"it/Iterador.h"
@@ -425,61 +425,55 @@
 1753697407 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\idobjeto.cpp
 	"IDObjeto.h"
 
-1753872005 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreiterador.cpp
+1753982641 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreiterador.cpp
 	"ArvoreIterador.h"
-	<cstdlib>
 
 1753826474 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreiterador.h
 	"Iterador.h"
 	"../Objeto.h"
 	"../structdef.h"
 
-1753825387 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreordemcentraliterador.cpp
+1753982658 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreordemcentraliterador.cpp
 	"ArvoreOrdemCentralIterador.h"
-	<cstdlib>
 
 1753825272 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreordemcentraliterador.h
 	"ArvoreIterador.h"
 	"../Objeto.h"
 	"../structdef.h"
 
-1753826375 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreposordemiterador.cpp
+1753982688 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreposordemiterador.cpp
 	"ArvorePosOrdemIterador.h"
-	<cstdlib>
 
 1753826327 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreposordemiterador.h
 	"ArvoreIterador.h"
 	"../Objeto.h"
 	"../structdef.h"
 
-1753825651 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvorepreordemiterador.cpp
+1753982709 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvorepreordemiterador.cpp
 	"ArvorePreOrdemIterador.h"
-	<cstdlib>
 
 1753824519 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvorepreordemiterador.h
 	"ArvoreIterador.h"
 	"../Objeto.h"
 	"../structdef.h"
 
-1753826852 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\listaiterador.cpp
+1753982723 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\listaiterador.cpp
 	"ListaIterador.h"
-	<cstdlib>
 
 1753826883 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\listaiterador.h
 	"Iterador.h"
 	"../Objeto.h"
 	"../structdef.h"
 
-1753827442 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\lista.cpp
+1753982583 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\lista.cpp
 	"Lista.h"
 	"it/ListaIterador.h"
-	<cstdlib>
 
-1753827132 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\lista.h
+1754039563 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\lista.h
 	"Objeto.h"
-	"PercIT.h"
 	"Estrutura.h"
 	"structdef.h"
+	"perc/PercIT.h"
 	"comp/ObjComparador.h"
 	"comp/CampoComparador.h"
 	"it/Iterador.h"
@@ -487,4 +481,16 @@
 1753982336 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\arvore.cpp
 	"Arvore.h"
 	"it/ArvoreOrdemCentralIterador.h"
+
+1754039550 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\perc\percit.h
+	"../Objeto.h"
+
+1754039856 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\perc\idpercit.cpp
+	"IDPercIT.h"
+	"../IDObjeto.h"
+	<iostream>
+
+1754039805 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\perc\idpercit.h
+	"PercIT.h"
+	"../Objeto.h"
 

@@ -59,36 +59,46 @@ EXPORTS
     _ZN6ArvoreD0Ev @58
     _ZN6ArvoreD1Ev @59
     _ZN6ArvoreD2Ev @60
-    _ZN8IDArvore5buscaEi @61
-    _ZN8IDArvore6alteraEP8IDObjeto @62
-    _ZN8IDArvore6deletaEi @63
-    _ZN8IDArvore6insereEP8IDObjeto @64
-    _ZN8IDArvoreC1Ev @65
-    _ZN8IDArvoreC2Ev @66
-    _ZN8IDObjeto5getIdEv @67
-    _ZN8IDObjeto5setIdEi @68
-    _ZTI13ListaIterador @69 DATA
-    _ZTI13ObjComparador @70 DATA
-    _ZTI14ArvoreIterador @71 DATA
-    _ZTI15CampoComparador @72 DATA
-    _ZTI15IDObjComparador @73 DATA
-    _ZTI17IDCampoComparador @74 DATA
-    _ZTI22ArvorePosOrdemIterador @75 DATA
-    _ZTI22ArvorePreOrdemIterador @76 DATA
-    _ZTI26ArvoreOrdemCentralIterador @77 DATA
-    _ZTI5Lista @78 DATA
-    _ZTI6Arvore @79 DATA
-    _ZTI6PercIT @80 DATA
-    _ZTI8IDArvore @81 DATA
-    _ZTI8Iterador @82 DATA
-    _ZTI9Estrutura @83 DATA
-    _ZTV13ObjComparador @84 DATA
-    _ZTV15CampoComparador @85 DATA
-    _ZTV15IDObjComparador @86 DATA
-    _ZTV17IDCampoComparador @87 DATA
-    _ZTV5Lista @88 DATA
-    _ZTV6Arvore @89 DATA
-    _ZTV6PercIT @90 DATA
-    _ZTV8IDArvore @91 DATA
-    _ZTV8Iterador @92 DATA
-    _ZTV9Estrutura @93 DATA
+    _ZN7IDLista5buscaEi @61
+    _ZN7IDLista6alteraEP8IDObjeto @62
+    _ZN7IDLista6deletaEi @63
+    _ZN7IDListaC1Ev @64
+    _ZN7IDListaC2Ev @65
+    _ZN8IDArvore5buscaEi @66
+    _ZN8IDArvore6alteraEP8IDObjeto @67
+    _ZN8IDArvore6deletaEi @68
+    _ZN8IDArvore6insereEP8IDObjeto @69
+    _ZN8IDArvoreC1Ev @70
+    _ZN8IDArvoreC2Ev @71
+    _ZN8IDObjeto5getIdEv @72
+    _ZN8IDObjeto5setIdEi @73
+    _ZN8IDPercIT8percorreEP6Objeto @74
+    _ZTI13ListaIterador @75 DATA
+    _ZTI13ObjComparador @76 DATA
+    _ZTI14ArvoreIterador @77 DATA
+    _ZTI15CampoComparador @78 DATA
+    _ZTI15IDObjComparador @79 DATA
+    _ZTI17IDCampoComparador @80 DATA
+    _ZTI22ArvorePosOrdemIterador @81 DATA
+    _ZTI22ArvorePreOrdemIterador @82 DATA
+    _ZTI26ArvoreOrdemCentralIterador @83 DATA
+    _ZTI5Lista @84 DATA
+    _ZTI6Arvore @85 DATA
+    _ZTI6PercIT @86 DATA
+    _ZTI7IDLista @87 DATA
+    _ZTI8IDArvore @88 DATA
+    _ZTI8IDPercIT @89 DATA
+    _ZTI8Iterador @90 DATA
+    _ZTI9Estrutura @91 DATA
+    _ZTV13ObjComparador @92 DATA
+    _ZTV15CampoComparador @93 DATA
+    _ZTV15IDObjComparador @94 DATA
+    _ZTV17IDCampoComparador @95 DATA
+    _ZTV5Lista @96 DATA
+    _ZTV6Arvore @97 DATA
+    _ZTV6PercIT @98 DATA
+    _ZTV7IDLista @99 DATA
+    _ZTV8IDArvore @100 DATA
+    _ZTV8IDPercIT @101 DATA
+    _ZTV8Iterador @102 DATA
+    _ZTV9Estrutura @103 DATA
