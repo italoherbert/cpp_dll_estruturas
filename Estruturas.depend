@@ -397,7 +397,7 @@
 	"IDObjeto.h"
 	"comp/IDObjComparador.h"
 
-1754039412 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\arvore.h
+1754051106 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\arvore.h
 	"Objeto.h"
 	"Estrutura.h"
 	"structdef.h"
@@ -419,10 +419,10 @@
 1753824481 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\iterador.h
 	"../Objeto.h"
 
-1753812903 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\structdef.h
+1754134799 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\structdef.h
 	"Objeto.h"
 
-1753697407 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\idobjeto.cpp
+1754079239 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\idobjeto.cpp
 	"IDObjeto.h"
 
 1753982641 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreiterador.cpp
@@ -433,11 +433,11 @@
 	"../Objeto.h"
 	"../structdef.h"
 
-1753982658 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreordemcentraliterador.cpp
+1754151592 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreordemcentraliterador.cpp
 	"ArvoreOrdemCentralIterador.h"
 
-1753825272 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreordemcentraliterador.h
-	"ArvoreIterador.h"
+1754140298 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\arvoreordemcentraliterador.h
+	"Iterador.h"
 	"../Objeto.h"
 	"../structdef.h"
 
@@ -465,11 +465,12 @@
 	"../Objeto.h"
 	"../structdef.h"
 
-1753982583 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\lista.cpp
+1754050686 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\lista.cpp
 	"Lista.h"
 	"it/ListaIterador.h"
+	"it/InversoListaIterador.h"
 
-1754039563 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\lista.h
+1754050708 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\lista.h
 	"Objeto.h"
 	"Estrutura.h"
 	"structdef.h"
@@ -478,7 +479,7 @@
 	"comp/CampoComparador.h"
 	"it/Iterador.h"
 
-1753982336 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\arvore.cpp
+1754145608 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\arvore.cpp
 	"Arvore.h"
 	"it/ArvoreOrdemCentralIterador.h"
 
@@ -493,4 +494,29 @@
 1754039805 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\perc\idpercit.h
 	"PercIT.h"
 	"../Objeto.h"
+
+1754042292 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\idlista.cpp
+	"IDLista.h"
+	"comp/IDCampoComparador.h"
+
+1754042260 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\idlista.h
+	"Lista.h"
+	"IDObjeto.h"
+	"comp/IDObjComparador.h"
+
+1754049594 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\perc\vectoridpercit.cpp
+	"VectorIDPercIT.h"
+	"../IDObjeto.h"
+
+1754049582 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\perc\vectoridpercit.h
+	"PercIT.h"
+	<vector>
+
+1754050559 source:c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\inversolistaiterador.cpp
+	"InversoListaIterador.h"
+
+1754050483 c:\users\italo\workspace-cpp\dlls\estruturas\src\estrutura\it\inversolistaiterador.h
+	"Iterador.h"
+	"../Objeto.h"
+	"../structdef.h"
 

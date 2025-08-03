@@ -13,7 +13,7 @@ Arvore::~Arvore() {
 }
 
 void Arvore::insere( Objeto* dados ) {
-	insereEmArvore( &raiz, dados );
+	insereEmArvore( &raiz, nullptr, dados );
 }
 
 void Arvore::percorre( PercIT* perc ) {
@@ -60,18 +60,19 @@ int Arvore::tamanho() {
     return tamanhoDaArvore( raiz );
 }
 
-void Arvore::insereEmArvore( Arv** arv, Objeto* dados ) {
+void Arvore::insereEmArvore( Arv** arv, Arv* pai, Objeto* dados ) {
 	if ( *arv == nullptr ) {
 		*arv = new Arv;
 		(*arv)->dados = dados;
+		(*arv)->pai = pai;
 		(*arv)->esq = nullptr;
 		(*arv)->dir = nullptr;
 
 		this->tam++;
 	} else if ( objComparador->compara( dados, (*arv)->dados ) == -1 ) {
-		insereEmArvore( &((*arv)->esq), dados );
+		insereEmArvore( &((*arv)->esq), *arv, dados );
 	} else {
-		insereEmArvore( &((*arv)->dir), dados );
+		insereEmArvore( &((*arv)->dir), *arv, dados );
 	}
 
 }
@@ -136,20 +137,24 @@ Objeto* Arvore::deletaEmArvore( Arv** arv, CampoComparador* comparador ) {
 		if ( (*arv)->esq == nullptr && (*arv)->dir == nullptr ) {
 			*arv = nullptr;
 		} else if ( (*arv)->esq == nullptr ) {
+		    (*arv)->dir->pai = (*arv)->pai;
 			*arv = (*arv)->dir;
 		} else if ( (*arv)->dir == nullptr ) {
+		    (*arv)->esq->pai = (*arv)->pai;
 			*arv = (*arv)->esq;
 		} else {
 			Arv* perc = (*arv)->dir;
 			while( perc->esq != nullptr )
 				perc = perc->esq;
 			perc->esq = (*arv)->esq;
+			perc->esq->pai = perc;
 			*arv = (*arv)->dir;
 		}
 		Objeto* dados = aux->dados;
 		delete aux;
 
 		this->tam--;
+
 		return dados;
 	} else if ( comparador->compara( (*arv)->dados ) == -1 ) {
 		return deletaEmArvore( &(*arv)->esq, comparador );

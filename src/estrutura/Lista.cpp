@@ -1,6 +1,7 @@
 
 #include "Lista.h"
 #include "it/ListaIterador.h"
+#include "it/InversoListaIterador.h"
 
 Lista::Lista() {
     descritor = new Descritor();
@@ -35,6 +36,10 @@ void Lista::percorreOrdemInversa( PercIT* perc ) {
 
 Iterador* Lista::it() {
     return new ListaIterador( descritor->prim );
+}
+
+Iterador* Lista::inversoIt() {
+    return new InversoListaIterador( descritor->ult );
 }
 
 Objeto* Lista::busca( CampoComparador* comparador ) {

@@ -18,7 +18,6 @@
 					<Add option="-std=gnu99" />
 					<Add option="-g" />
 					<Add option="-DBUILDING_DLL" />
-					<Add directory="include/util" />
 				</Compiler>
 				<Linker>
 					<Add library="user32" />
@@ -48,6 +47,8 @@
 		<Unit filename="src/estrutura/Estrutura.h" />
 		<Unit filename="src/estrutura/IDArvore.cpp" />
 		<Unit filename="src/estrutura/IDArvore.h" />
+		<Unit filename="src/estrutura/IDLista.cpp" />
+		<Unit filename="src/estrutura/IDLista.h" />
 		<Unit filename="src/estrutura/IDObjeto.cpp" />
 		<Unit filename="src/estrutura/IDObjeto.h" />
 		<Unit filename="src/estrutura/Lista.cpp" />
@@ -59,20 +60,18 @@
 		<Unit filename="src/estrutura/comp/IDObjComparador.cpp" />
 		<Unit filename="src/estrutura/comp/IDObjComparador.h" />
 		<Unit filename="src/estrutura/comp/ObjComparador.h" />
-		<Unit filename="src/estrutura/it/ArvoreIterador.cpp" />
-		<Unit filename="src/estrutura/it/ArvoreIterador.h" />
 		<Unit filename="src/estrutura/it/ArvoreOrdemCentralIterador.cpp" />
 		<Unit filename="src/estrutura/it/ArvoreOrdemCentralIterador.h" />
-		<Unit filename="src/estrutura/it/ArvorePosOrdemIterador.cpp" />
-		<Unit filename="src/estrutura/it/ArvorePosOrdemIterador.h" />
-		<Unit filename="src/estrutura/it/ArvorePreOrdemIterador.cpp" />
-		<Unit filename="src/estrutura/it/ArvorePreOrdemIterador.h" />
+		<Unit filename="src/estrutura/it/InversoListaIterador.cpp" />
+		<Unit filename="src/estrutura/it/InversoListaIterador.h" />
 		<Unit filename="src/estrutura/it/Iterador.h" />
 		<Unit filename="src/estrutura/it/ListaIterador.cpp" />
 		<Unit filename="src/estrutura/it/ListaIterador.h" />
 		<Unit filename="src/estrutura/perc/IDPercIT.cpp" />
 		<Unit filename="src/estrutura/perc/IDPercIT.h" />
 		<Unit filename="src/estrutura/perc/PercIT.h" />
+		<Unit filename="src/estrutura/perc/VectorIDPercIT.cpp" />
+		<Unit filename="src/estrutura/perc/VectorIDPercIT.h" />
 		<Unit filename="src/estrutura/structdef.h" />
 		<Extensions />
 	</Project>

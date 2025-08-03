@@ -1,7 +1,7 @@
 
 #include "IDObjeto.h"
 
-IDObjeto::getId() {
+int IDObjeto::getId() {
 	return this->id;
 }
 
