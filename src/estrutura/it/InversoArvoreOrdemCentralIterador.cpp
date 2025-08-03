@@ -1,46 +1,46 @@
 
-#include "ArvoreOrdemCentralIterador.h"
+#include "InversoArvoreOrdemCentralIterador.h"
 
-ArvoreOrdemCentralIterador::ArvoreOrdemCentralIterador( Arv* raiz ) {
-    perc = menorEsq( raiz );
+InversoArvoreOrdemCentralIterador::InversoArvoreOrdemCentralIterador( Arv* raiz ) {
+    perc = menorDir( raiz );
     vaiParaBaixo = true;
-    vemDaEsquerda = false;
+    vemDaDireita = false;
 }
 
-bool ArvoreOrdemCentralIterador::temProx() {
+bool InversoArvoreOrdemCentralIterador::temProx() {
     return perc != nullptr;
 }
 
-Objeto* ArvoreOrdemCentralIterador::prox() {
+Objeto* InversoArvoreOrdemCentralIterador::prox() {
     if ( perc == nullptr )
         return nullptr;
 
     Arv* aux = perc;
     if ( vaiParaBaixo ) {
         if ( perc->esq == nullptr && perc->dir == nullptr ) {
-            if ( perc == perc->pai->esq ) {
+            if ( perc == perc->pai->dir ) {
                 perc = perc->pai;
                 vaiParaBaixo = false;
-                vemDaEsquerda = true;
+                vemDaDireita = true;
             } else {
                 perc = paiNaoIterado( perc );
                 vaiParaBaixo = false;
             }
         } else {
-            if ( perc->dir == nullptr ) {
+            if ( perc->esq == nullptr ) {
                 perc = paiNaoIterado( perc );
                 vaiParaBaixo = false;
             } else {
-                perc = menorEsq( perc->dir );
+                perc = menorDir( perc->esq );
             }
         }
     } else {
-        if ( vemDaEsquerda ) {
-            if ( perc->dir == nullptr ) {
+        if ( vemDaDireita ) {
+            if ( perc->esq == nullptr ) {
                 perc = paiNaoIterado( perc );
                 vaiParaBaixo = true;
             } else {
-                perc = menorEsq( perc->dir );
+                perc = menorDir( perc->esq );
             }
         } else {
             perc = paiNaoIterado( perc );
@@ -51,18 +51,18 @@ Objeto* ArvoreOrdemCentralIterador::prox() {
     return aux->dados;
 }
 
-Arv* ArvoreOrdemCentralIterador::paiNaoIterado( Arv* perc ) {
+Arv* InversoArvoreOrdemCentralIterador::paiNaoIterado( Arv* perc ) {
     if ( perc == nullptr )
         return nullptr;
 
     if ( perc->pai != nullptr )
-        vemDaEsquerda = ( perc == perc->pai->esq ? true : false );
+        vemDaDireita = ( perc == perc->pai->dir ? true : false );
 
     Arv* p = perc->pai;
     bool iterado = ( p != nullptr ? p->iterado : false );
     while( p != nullptr && iterado ) {
         if ( p->pai != nullptr )
-            vemDaEsquerda = ( p == p->pai->esq ? true : false );
+            vemDaDireita = ( p == p->pai->dir ? true : false );
 
         p = p->pai;
         iterado = ( p != nullptr ? p->iterado : false );
@@ -71,14 +71,14 @@ Arv* ArvoreOrdemCentralIterador::paiNaoIterado( Arv* perc ) {
     return p;
 }
 
-Arv* ArvoreOrdemCentralIterador::menorEsq( Arv* perc ) {
+Arv* InversoArvoreOrdemCentralIterador::menorDir( Arv* perc ) {
     if ( perc == nullptr )
         return nullptr;
 
     Arv* p = perc;
     p->iterado = false;
-    while( p->esq != nullptr ) {
-        p = p->esq;
+    while( p->dir != nullptr ) {
+        p = p->dir;
         p->iterado = false;
     }
     return p;

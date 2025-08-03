@@ -57,51 +57,53 @@ EXPORTS
     _ZN6Arvore6insereEP6Objeto @56
     _ZN6Arvore7tamanhoEv @57
     _ZN6Arvore8percorreEP6PercIT @58
-    _ZN6ArvoreC1EP13ObjComparador @59
-    _ZN6ArvoreC2EP13ObjComparador @60
-    _ZN6ArvoreD0Ev @61
-    _ZN6ArvoreD1Ev @62
-    _ZN6ArvoreD2Ev @63
-    _ZN7IDLista5buscaEi @64
-    _ZN7IDLista6alteraEP8IDObjeto @65
-    _ZN7IDLista6deletaEi @66
-    _ZN7IDListaC1Ev @67
-    _ZN7IDListaC2Ev @68
-    _ZN8IDArvore5buscaEi @69
-    _ZN8IDArvore6alteraEP8IDObjeto @70
-    _ZN8IDArvore6deletaEi @71
-    _ZN8IDArvore6insereEP8IDObjeto @72
-    _ZN8IDArvoreC1Ev @73
-    _ZN8IDArvoreC2Ev @74
-    _ZN8IDObjeto5getIdEv @75
-    _ZN8IDObjeto5setIdEi @76
-    _ZN8IDPercIT8percorreEP6Objeto @77
-    _ZTI13ListaIterador @78 DATA
-    _ZTI13ObjComparador @79 DATA
-    _ZTI14VectorIDPercIT @80 DATA
-    _ZTI15CampoComparador @81 DATA
-    _ZTI15IDObjComparador @82 DATA
-    _ZTI17IDCampoComparador @83 DATA
-    _ZTI20InversoListaIterador @84 DATA
-    _ZTI26ArvoreOrdemCentralIterador @85 DATA
-    _ZTI5Lista @86 DATA
-    _ZTI6Arvore @87 DATA
-    _ZTI6PercIT @88 DATA
-    _ZTI7IDLista @89 DATA
-    _ZTI8IDArvore @90 DATA
-    _ZTI8IDPercIT @91 DATA
-    _ZTI8Iterador @92 DATA
-    _ZTI9Estrutura @93 DATA
-    _ZTV13ObjComparador @94 DATA
-    _ZTV14VectorIDPercIT @95 DATA
-    _ZTV15CampoComparador @96 DATA
-    _ZTV15IDObjComparador @97 DATA
-    _ZTV17IDCampoComparador @98 DATA
-    _ZTV5Lista @99 DATA
-    _ZTV6Arvore @100 DATA
-    _ZTV6PercIT @101 DATA
-    _ZTV7IDLista @102 DATA
-    _ZTV8IDArvore @103 DATA
-    _ZTV8IDPercIT @104 DATA
-    _ZTV8Iterador @105 DATA
-    _ZTV9Estrutura @106 DATA
+    _ZN6Arvore9inversoItEv @59
+    _ZN6ArvoreC1EP13ObjComparador @60
+    _ZN6ArvoreC2EP13ObjComparador @61
+    _ZN6ArvoreD0Ev @62
+    _ZN6ArvoreD1Ev @63
+    _ZN6ArvoreD2Ev @64
+    _ZN7IDLista5buscaEi @65
+    _ZN7IDLista6alteraEP8IDObjeto @66
+    _ZN7IDLista6deletaEi @67
+    _ZN7IDListaC1Ev @68
+    _ZN7IDListaC2Ev @69
+    _ZN8IDArvore5buscaEi @70
+    _ZN8IDArvore6alteraEP8IDObjeto @71
+    _ZN8IDArvore6deletaEi @72
+    _ZN8IDArvore6insereEP8IDObjeto @73
+    _ZN8IDArvoreC1Ev @74
+    _ZN8IDArvoreC2Ev @75
+    _ZN8IDObjeto5getIdEv @76
+    _ZN8IDObjeto5setIdEi @77
+    _ZN8IDPercIT8percorreEP6Objeto @78
+    _ZTI13ListaIterador @79 DATA
+    _ZTI13ObjComparador @80 DATA
+    _ZTI14VectorIDPercIT @81 DATA
+    _ZTI15CampoComparador @82 DATA
+    _ZTI15IDObjComparador @83 DATA
+    _ZTI17IDCampoComparador @84 DATA
+    _ZTI20InversoListaIterador @85 DATA
+    _ZTI26ArvoreOrdemCentralIterador @86 DATA
+    _ZTI33InversoArvoreOrdemCentralIterador @87 DATA
+    _ZTI5Lista @88 DATA
+    _ZTI6Arvore @89 DATA
+    _ZTI6PercIT @90 DATA
+    _ZTI7IDLista @91 DATA
+    _ZTI8IDArvore @92 DATA
+    _ZTI8IDPercIT @93 DATA
+    _ZTI8Iterador @94 DATA
+    _ZTI9Estrutura @95 DATA
+    _ZTV13ObjComparador @96 DATA
+    _ZTV14VectorIDPercIT @97 DATA
+    _ZTV15CampoComparador @98 DATA
+    _ZTV15IDObjComparador @99 DATA
+    _ZTV17IDCampoComparador @100 DATA
+    _ZTV5Lista @101 DATA
+    _ZTV6Arvore @102 DATA
+    _ZTV6PercIT @103 DATA
+    _ZTV7IDLista @104 DATA
+    _ZTV8IDArvore @105 DATA
+    _ZTV8IDPercIT @106 DATA
+    _ZTV8Iterador @107 DATA
+    _ZTV9Estrutura @108 DATA

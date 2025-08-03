@@ -1,6 +1,7 @@
 
 #include "Arvore.h"
 #include "it/ArvoreOrdemCentralIterador.h"
+#include "it/InversoArvoreOrdemCentralIterador.h"
 
 Arvore::Arvore( ObjComparador* objComparador ) {
 	this->raiz = nullptr;
@@ -34,6 +35,10 @@ void Arvore::percorrePosOrdem( PercIT* perc ) {
 
 Iterador* Arvore::it() {
     return new ArvoreOrdemCentralIterador( raiz );
+}
+
+Iterador* Arvore::inversoIt() {
+    return new InversoArvoreOrdemCentralIterador( raiz );
 }
 
 Objeto* Arvore::busca( CampoComparador* comparador ) {
@@ -147,8 +152,10 @@ Objeto* Arvore::deletaEmArvore( Arv** arv, CampoComparador* comparador ) {
 			while( perc->esq != nullptr )
 				perc = perc->esq;
 			perc->esq = (*arv)->esq;
-			perc->esq->pai = perc;
+			(*arv)->esq->pai = perc;
+			(*arv)->dir->pai = (*arv)->pai;
 			*arv = (*arv)->dir;
+
 		}
 		Objeto* dados = aux->dados;
 		delete aux;
