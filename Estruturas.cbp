@@ -62,6 +62,8 @@
 		<Unit filename="src/estrutura/comp/ObjComparador.h" />
 		<Unit filename="src/estrutura/it/ArvoreOrdemCentralIterador.cpp" />
 		<Unit filename="src/estrutura/it/ArvoreOrdemCentralIterador.h" />
+		<Unit filename="src/estrutura/it/InversoArvoreOrdemCentralIterador.cpp" />
+		<Unit filename="src/estrutura/it/InversoArvoreOrdemCentralIterador.h" />
 		<Unit filename="src/estrutura/it/InversoListaIterador.cpp" />
 		<Unit filename="src/estrutura/it/InversoListaIterador.h" />
 		<Unit filename="src/estrutura/it/Iterador.h" />
